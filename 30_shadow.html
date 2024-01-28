@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow </title>
+    <style>
+        body{
+            background: url('https://source.unsplash.com/random/moon')no-repeat center center/cover; ;
+        }
+        .container{
+            display: flex;
+            /* background: url('https://source.unsplash.com/random')no-repeat center center/cover; ; */
+
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 32px 12px;
+            /* border: 2px solid red; */
+            background-color: burlywood;
+            box-shadow: 8px 5px 10px 1px black;
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            box-shadow: inset 3px 4px 10px white;
+            
+            /* background: url('https://source.unsplash.com/random')no-repeat center center/cover; */
+            
+            
+        }
+        .card h2{
+            text-shadow: 3px 2px 5px rgb(255, 255, 255);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="card" id="card-1">
+        <h2>This C++ Course </h2><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus magni dignissimos perspiciatis perferendis sed voluptatibus officia ea ratione accusantium animi unde totam eaque doloremque incidunt dolores molestias nulla atque recusandae quia tempore, nihil earum?</p>
+        </div>
+        
+        <div class="card" id="card-2">
+        <h2>This Java Course</h2><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus magni dignissimos perspiciatis perferendis sed voluptatibus officia ea ratione accusantium animi unde totam eaque doloremque incidunt dolores molestias nulla atque recusandae quia tempore, nihil earum?</p>
+        </div>
+        
+        <div class="card" id="card-3">
+        <h2>This Css Course</h2><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus magni dignissimos perspiciatis perferendis sed voluptatibus officia ea ratione accusantium animi unde totam eaque doloremque incidunt dolores molestias nulla atque recusandae quia tempore, nihil earum?</p>
+        </div>
+    </div>
+    
+</body>
+</html>

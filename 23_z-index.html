@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z-index </title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+        }
+
+        #box1 {
+            position: relative;
+            top: 49px;
+            background-color: green;
+            z-index: 35;
+        }
+
+        #box2 {
+            top: 34px;
+            position: relative;
+            z-index: 34;
+            /* z-index: will work only for postion: relative absolute or sticky */
+            /* jiska z-index bada woh upar jiska kam woh niche */
+             
+            /* will hide the element and the space */
+            /* *display: none;*  */
+
+            /*will hide the element only space will not be effected */
+            /* *visibility: hidden;* */
+            background-color: red;
+
+        }
+
+        #box3 {
+            background-color: blue;
+        }
+
+        #box4 {
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- shortcut div.box#box$...$ will work as loop -->
+    <div class="box" id="box1">
+
+    </div>
+    <div class="box" id="box2">
+
+    </div>
+    <div class="box" id="box3">
+
+    </div>
+    <div class="box" id="box4">
+
+    </div>
+</body>
+
+</html>

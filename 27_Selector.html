@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        div >p{
+            /* div > p will apply to p which id direct child of div  */
+            color: yellow;
+            font-weight: bold;
+            background-color: green;
+        }
+        div + p{
+            /* if p is right after div  */
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>SELECTORS</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is another paragraph inside LI </p></li>
+            </ul>
+            <p>this is a paragraph</p>
+        </div>
+        <P>this is another paragraph</P>
+    </div>
+    <p>this is outer most paragraph</p>
+</body>
+</html>

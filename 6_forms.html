@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h2>HTML FORMS</h2>
+    <form action=" backend.php">
+        <label for="name">Name:</label>
+        <div>
+            <input type="text" name="name" id="name">
+        </div>
+        <br>
+        <label for="roll no">roll no:</label>
+        <div>
+            <input type="text"name="roll no" id="roll no">
+        </div> 
+        <br>
+        <label for="email">Email: </label>
+        <div>
+            <input type="email" name= "email " id="email">
+        </div>
+        <br>
+        <div>
+            DOB : <input type="date" name="" id="">        
+        </div>
+        <br>
+        <div>
+            <textarea
+            name="your opinion" id="" cols="30" rows="5">
+            </textarea>
+        </div>
+        <br>
+        <label for="18+">ARE YOU 18+ :</label>
+        <div>
+            <input type="checkbox" name="" id="18+">
+        </div>
+        <br>
+        <div>
+            gender : male <input type="radio"name="gender">female <input type="radio"name="gender">
+            other <input type="radio"name="gender">
+        </div>
+        <br>  
+        <div>
+        <label for="course">Your course</label>
+        <select name="btech" id="course">
+            <option value="btech">Btech</option>
+            <option value="ba">BA</option>
+            <option value="bsc">BSc</option>
+            <option value="bca">BCA</option>
+        </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+</html>

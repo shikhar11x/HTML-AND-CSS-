@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* To inisialise flex box */
+            display: flex;
+            /* Properties for flex container */
+
+            /* flex-direction: row;(default) */
+
+            /* flex-wrap: nowrap;(default) */
+            /* flex-wrap: wrap; */
+            /* BOTH TOGETHER
+            flex-flow:flex_direction flex_wrap; 
+            */
+
+            /* align to centre in horizontal direction */
+            /* justify-content: center; */
+
+            /* equal space between every 2 box */
+            /* justify-content: space-between; */
+
+            /* equal space between every box with corner too */
+            /* justify-content: space-evenly; */
+
+            /* equal space between left and right of every box but unequal with corner */
+            /* justify-content: space-around; */
+
+            /* will align items to vertically center */
+            /* align-items: center; */
+        }
+        .item{
+            width: 150px;
+            height: 150px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-1{
+            /* flex property for items */
+            order: 2;
+            /* higher the order later the position */
+            
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+            /* flex-grow/shrink higher the number faster will grow/shrink */
+
+            /* flex-basis: 100px; */
+            /* when flex-direction is set to row flex-basis will control width */
+            /* when flex-direction is set to column flex-basis will control height */
+        }
+        #item-2{
+            flex: 2 2 344px;
+            /* shortcut*/ 
+            /*flex: flex-grow flex-shrink flex-basis */
+        }
+        #item-3{
+            align-self: center;
+            /* To align to center */
+        }
+        </style>
+</head>
+<body>
+    <h1>Flexbox practice</h1>
+    <div class="container">
+        <div class="item" id="item-1">
+            first Box
+        </div>
+
+        <div class="item" id="item-2">
+            second Box
+        </div>
+
+        <div class="item" id="item-3">
+            third Box   
+        </div> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Ubuntu", sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            margin: 36px auto;
+            background-color: rgb(239, 214, 192);
+
+        }
+
+        .item {
+            border: 2px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(228, 212, 212);
+
+        }
+
+        #fruit {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary {
+            clear: both;
+            /* float: left; */
+            width: 100%;
+        }
+
+        p,
+        h3 {
+            text-align: center;
+        }
+
+        h1 {
+            margin: 23px auto;
+            width: 550px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>fruit</h3>
+            <p id="fruitpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolore itaque harum tenetur quisquam,
+                quia minus molestias, quidem accusantium, tempore quam saepe! Iste veritatis accusantium quas rerum
+                aliquid sit dolorum Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellendus dicta
+                consequatur aperiam labore alias consequuntur laboriosam molestiae quam consectetur similique, est minus
+                eos temporibus ullam. Doloremque molestiae nisi sit.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolore itaque harum tenetur quisquam,
+                quia minus molestias, quidem accusantium, tempore quam saepe! Iste veritatis accusantium quas rerum
+                aliquid sit dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos debitis suscipit
+                soluta atque corporis ex exercitationem. Ipsum sint delectus est labore consequatur repudiandae quasi
+                veritatis laudantium, quis nulla excepturi optio.</p>
+
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolore itaque harum tenetur quisquam,
+                quia minus molestias, quidem accusantium, tempore quam saepe! Iste veritatis accusantium quas rerum
+                aliquid sit dolorum.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> before and after pseudo selector </title>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&family=Sixtyfour&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        /* before and after pseudo selector */
+        header::before{
+            content:"";
+            background: url('https://source.unsplash.com/random/1600x900')no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+            
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            margin: 3px 230px;
+            align-items: center;
+            /* border: 2px solid gray; */
+            height: 300px;
+            justify-content: center;
+            font-family: "Single Day", cursive;
+
+        }
+        h2{
+            font-size: 3rem;
+            font-family: "Sixtyfour", sans-serif;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        li{
+            list-style: none;
+            padding: 34px;
+        }
+        .navigation{
+            /* border: 2px solid white; */
+            display: flex;
+            font-size: 24;
+            font-family: "Single Day", cursive;
+            padding: 10px 500px;
+            
+
+        }
+        /* section::before{
+            content: "This is the content";
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h2>Welcome to coding world</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cum animi quis culpa eligendi. Deserunt illo amet id minus autem repudiandae a soluta incidunt quibusdam est provident nisi vel facere, fugiat nesciunt quod distinctio!</p>
+        </section>
+        <!-- <hr> -->
+</body>
+</html>

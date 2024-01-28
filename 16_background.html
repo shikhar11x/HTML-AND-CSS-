@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,Width,Border and Backgrounds</title>
+    <style>
+        #firstPara{
+            background-color: red;
+            height: 100px;
+            width: 445px;
+            border-width: 3px;
+            border-color: green;
+            /* if color not given the default is black*/
+            border-style: solid;
+            border-radius: 10px;
+/* *** short cut - border: 4px solid green; *** */
+        }
+        #secondPara{
+            background-color: rgb(2, 255, 70);
+            height: 100px;
+            width: 445px;
+            border-top: 2px solid blue;
+            border-bottom: 2px solid orange;
+            border-left: 2px solid rebeccapurple;
+            border-right: 2px solid rgb(255, 0, 153);
+            border-top-right-radius:  4px; ;
+        }
+        #thirdPara{
+            height: 200px;
+            width: 200px;
+            background-image: url(https://lh3.googleusercontent.com/a/ACg8ocJBIvu3RUPsPWb6US_NucYVpA77DfzDrbLyvtm3ymt3rUs=s96-c-rg-br100);
+            border: 2px solid red;
+            background-repeat: no-repeat;
+            background-position: center center
+            ;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>This is heading</h2>
+    <p id="firstPara">This is paragraph </p>
+    
+    <h2>This is 2nd heading</h2>
+    <p id="secondPara">This is 2nd paragraph </p>
+
+    <h2>This is 3rd heading</h2>
+    <p id="thirdPara">This is 3rd paragraph </p>
+</body>
+</html>
